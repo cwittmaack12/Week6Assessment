@@ -29,6 +29,11 @@ app.get('/js', (req, res) => {
     res.sendFile(path.join(__dirname, '../assessment-qa-devops/public/index.js'))
 })
 
+app.get('/', (req,res) => {
+    res.sendFile(path.join(__dirname, '../assessment-qa.devops/public/index.html'))
+})
+
+
 app.get('/weapons', (req, res) => {
     try{
         fakeFunction();
