@@ -19,7 +19,7 @@ rollbar.log('Hello world!')
 
 app.use(express.json())
 app.use(cors())
-app.use(express.static ('public'))
+app.use(express.static ('/public'))
 
 app.get('/styles', (req, res) => {
     res.sendFile(path.join(__dirname, '../assessment-qa-devops/public/index.css'))
